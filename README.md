@@ -20,7 +20,7 @@ Commit your code regularly and meaningfully. This helps both you --in case you e
 
 In this challenge, create a web page that presents a styled list of **characters obtained from an API**. Being able to render out data to a web page is a large part of what JavaScript developers do, this challenge assesses your ability to achieve such a task.
 
-## Self-Study/Essay Questions
+## Self-Study/Essay Questions ✔
 
 Demonstrate your understanding of this Sprint's concepts by answering free-form questions. Edit the `Answers.md` file at the root of the project to include your answer after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
