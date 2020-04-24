@@ -11,14 +11,31 @@ margin:auto;
 justify-content:center;
 `;
 
-const characterCard = props =>{
-    console.log(props)
+// const characterCard = props =>{
+//     console.log(props)
     
-    return (
-        <CardDiv><h1>name</h1></CardDiv>
-           
-          
+//     if(props.data.results !== undefined){
         
+    
+//     return (
+//         props.data.results.map(object =>{
+//             return <CardDiv><h1>{object.name}</h1></CardDiv>
+//         })
+        
+//     )}
+
+//     else{ return null}
+    
+// }
+    
+
+
+const characterCard = props =>{
+
+    return(
+        <div>{props.data && props.data.results.map((object, index) =>{
+            return <CardDiv key={index}><h1>{object.name}</h1></CardDiv>
+        })}</div>
     )
 }
 

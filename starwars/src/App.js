@@ -19,14 +19,16 @@ const App = () => {
     axios
       .get("https://swapi.py4e.com/api/people")
       
-      .then(res => setData(res.data))
+      .then(res =>{
+        console.log(res.data.results[1]) 
+        setData(res.data)})
       
       .catch(err => console.log(err));
   }, []);
 
 
   
-  console.log(data.results)
+  
   // Fetch characters from the API in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
@@ -34,7 +36,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      <CharacterCard/>
+      <CharacterCard data={data}/>
       
     </div>
   );
